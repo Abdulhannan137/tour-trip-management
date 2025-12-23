@@ -1,0 +1,213 @@
+/* Tour Dates Styles */
+.tour-dates-container {
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.tour-dates-container h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.date-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #ecf0f1;
+}
+
+.date-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.date-status {
+  border-top: 4px solid #667eea;
+  padding: 12px 20px;
+  background: #f0f4f9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.green {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.orange {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.red {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.gray {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.date-info {
+  padding: 25px;
+}
+
+.date-info h3 {
+  margin: 0 0 10px 0;
+  color: #1a252f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.destination {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.date-timeline {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.date-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.date-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #7f8c8d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.value {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.value.cost {
+  color: #1a252f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.description {
+  color: #34495e;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.capacity-bar {
+  margin-bottom: 20px;
+}
+
+.capacity-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background: #ecf0f1;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.date-actions {
+  padding: 15px 25px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.register-btn,
+.registered-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.register-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.register-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.registered-btn {
+  background: #d4edda;
+  color: #155724;
+  cursor: default;
+}
+
+.no-tours {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+  font-size: 18px;
+  background: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .dates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .date-card {
+    margin-bottom: 10px;
+  }
+}

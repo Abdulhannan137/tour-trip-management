@@ -1,0 +1,214 @@
+/* Grouping Styles */
+.grouping-container {
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.grouping-container h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.grouping-section {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grouping-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 20px;
+}
+
+.grouping-header h3 {
+  flex: 1;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.add-group-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.add-group-form input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.add-group-form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.group-card {
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.group-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+}
+
+.group-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.group-header-card h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.delete-group-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-group-btn:hover {
+  color: #c0392b;
+}
+
+.members-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.remove-member-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.remove-member-btn:hover {
+  color: #c0392b;
+}
+
+.no-members {
+  text-align: center;
+  padding: 20px;
+  color: #7f8c8d;
+  font-size: 12px;
+}
+
+.add-member-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.add-member-form input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #ecf0f1;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.add-member-form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-member-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.add-member-btn:hover {
+  background: #764ba2;
+}
+
+.cancel-btn {
+  background: #ecf0f1;
+  color: #34495e;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: #bdc3c7;
+}
+
+.no-groups {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .grouping-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .groups-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-group-form {
+    flex-direction: column;
+  }
+}
